@@ -9,18 +9,19 @@ int main(void) {
     }
 
     for (i = 0; i < 5; i++) {
-        for (j - 0; j < 5 * i; j++) {
-            if (precos[j] > precos [j + i]) {
+        for (j = 0; j < 5; j++) {
+            if (precos[j] < precos[j + 1]) {
                 aux = precos[j];
                 precos[j] = precos[j + 1];
                 precos[j + 1] = aux;
             }
         }
     }
-    printf("PRecos ordenados: \n");
-        for (i = 0; i < 6; i++) {
-            printf("%d ", precos[j]);
-            printf("\n");
-        }
+    printf("Precos ordenados: \n");
+    for (i = 0; i < 6; i++) {
+        printf("%d ", precos[j]);
+            
+    }
+    printf("\n");
     return 0;
 }
